@@ -13,6 +13,8 @@ body {
     line-height: 1.375;
     font-family: $primary-family;
     color: #000000;
+    font-style: normal;
+    background: #F4F4F4;
 }
 
 a {
@@ -68,13 +70,10 @@ a {
 }
 
 .container {
-    max-width: $site-width;
+    max-width: 1440px;
     width: 100%;
-    padding-left: 32px;
-    padding-right: 32px;
     box-sizing: border-box;
     margin: 0 auto;
-    
     @media #{$phone} {
         padding-left: 24px;
         padding-right: 24px;
