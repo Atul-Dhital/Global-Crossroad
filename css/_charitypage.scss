@@ -1,5 +1,8 @@
 .slider__buttom {
   display: flex;
+  @media #{$phone} {
+    display: none;
+  }
   .slider__buttom__item {
     justify-content: center;
     align-items: center;
@@ -40,12 +43,30 @@
     padding: 30px 80px 30px 80px;
     display: flex;
     justify-content: space-between;
+    @media #{$tablet} {
+      padding: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap:20px;
+      text-align: center;
+      display: block;
+    }
     .informaion__item-alt {
       max-width: 665px;
       width: 100%;
       display: flex;
       gap: 30px;
       flex-direction: column;
+      @media #{$tablet} {
+        max-width: 100%;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        text-align: center;
+      }
       .information__title {
         font-weight: 700;
         font-size: 36px;
@@ -141,6 +162,13 @@
     align-items: center;
     padding: 70px 80px 50px 80px;
     gap: 34px;
+    @media #{$tablet} {
+      padding: 20px 20px 30px 20px;
+      flex-wrap: wrap;
+    }
+    @media #{$phone} {
+      padding: 20px 0;
+    }
     .tip__heading {
       font-weight: 700;
       font-size: 36px;
@@ -155,6 +183,9 @@
       justify-content: center;
       gap: 30px;
       align-items: center;
+      @media #{$tablet} {
+        flex-wrap: wrap;
+      }
       .tip__item {
         max-width: 305px;
         width: 100%;
@@ -240,6 +271,13 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    @media #{$tablet} {
+      padding: 50px 100px 50px 100px;
+    }
+    @media #{$phone} {
+      padding: 20px 50px 20px 50px;
+      text-align: center;
+    }
     .plan__heading {
       font-weight: 500;
       font-size: 40px;
@@ -280,6 +318,13 @@
     align-items: center;
     flex-direction: column;
     gap: 53px;
+    @media #{$tablet} {
+      padding: 20px 20px 30px 20px;
+      flex-wrap: wrap;
+    }
+    @media #{$phone} {
+      padding: 20px 0;
+    }
     .review__heading {
       text-align: center;
       text-transform: capitalize;
@@ -294,6 +339,17 @@
       gap: 117px;
       max-width: 1185px;
       height: 197px;
+      @media #{$tablet} {
+        height: auto;
+        flex-wrap: wrap;
+        gap:30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      @media #{$phone} {
+        padding: 20px 0;
+      }
       .review___type {
         display: flex;
         flex-direction: column;
@@ -330,24 +386,29 @@
           line-height: 18px;
           color: #575351;
         }
+
         .star {
           display: flex;
-          gap: 6px;
-          image {
-            display: flex;
-            gap: 2px;
-            img {
-              width: 12px;
-              height: 12px;
-            }
+          justify-content: space-between;
+          align-items: center;
+          gap: 8px;
+          background: #dadde2;
+          border-radius: 2px;
+          i {
+            width: 8px;
+            height: 8px;
+            color: #f7941e;
+            margin-left: 3px;
           }
           span {
             font-weight: 500;
             font-size: 13px;
             line-height: 17px;
             color: #000000;
+            margin-left: 5px;
           }
         }
+
         .review__discription {
           font-weight: 500;
           font-size: 18px;
@@ -365,21 +426,23 @@
           width: 100%;
           .review__count-alt {
             width: 87px;
-
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding: 3px 13px 11px 13px;
             background: #dadde2;
             border-radius: 4px;
             gap: 1px;
             .star {
               display: flex;
-              width: 12px;
-              height: 12px;
-              gap: 2px;
-              background: #f7941e;
+              justify-content: space-between;
+              align-items: center;
+              gap: 5px;
+              i {
+                width: 8px;
+                height: 8px;
+                color: #f7941e;
+              }
             }
           }
           .review__line {
@@ -429,11 +492,16 @@
 }
 .testimonial {
   padding-top: 20px;
+
   .testimonial__wrapper {
     background: #f1f1f1;
     padding: 72px 72px 80px 72px;
     display: flex;
     justify-content: space-between;
+    @media #{$tablet} {
+      padding:10px 40px 10px 40px;
+      flex-wrap: wrap;
+    }
     .testimonial__item {
       display: flex;
       flex-direction: column;
@@ -450,6 +518,9 @@
         line-height: 46px;
         color: #575351;
         text-transform: capitalize;
+        @media #{$tablet} {
+         text-align: center;
+        }
       }
       .testimonial__subtitle {
         text-transform: capitalize;
@@ -458,9 +529,13 @@
         line-height: 31px;
         color: #148f44;
         margin-top: 20px;
+        @media #{$tablet} {
+       
+         }
       }
       .testimonial__subtitle-alt {
         margin-top: 20px;
+
       }
       .testimonal__content {
         .testimonal__discription {
@@ -472,7 +547,6 @@
           color: #575351;
           max-width: 473px;
           width: 100%;
-
           a {
             color: #148f44;
           }
@@ -483,6 +557,9 @@
       }
       .contact {
         display: flex;
+        @media #{$tablet} {
+          flex-wrap: wrap;
+        }
         .contact__type {
           max-width: 274px;
           display: flex;
@@ -491,6 +568,9 @@
           align-items: center;
           padding: 40px 80px 40px 75px;
           gap: 12px;
+          @media #{$tablet} {
+            padding: 20px 30px 20px 30px;
+          }
           .contact__item {
             width: 50px;
             height: 50px;
@@ -511,6 +591,9 @@
         margin-top: 30px;
         padding: 38px 26px;
         background: #f0f8ff;
+        @media #{$tablet} {
+          padding:20px;
+        }
         .testimonial__slider__head {
           color: #575351;
           font-weight: 400;
@@ -520,6 +603,10 @@
         }
         .testimonial__slider__container {
           margin-top: 30px;
+          height: auto;
+          @media #{$tablet} {
+            margin-top: 10px;
+          }
           .testimonial__slider__heading {
             letter-spacing: -0.015em;
             font-weight: 600;
@@ -571,7 +658,8 @@
   .testimonal__point {
     text-transform: capitalize;
     list-style: none;
-    min-width: 600px;
+    max-width: 600px;
+    width: 100%;
     i {
       width: 6px;
       height: 9px;

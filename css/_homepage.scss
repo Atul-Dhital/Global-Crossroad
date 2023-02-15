@@ -5,6 +5,13 @@
 .slider__wrapper {
   .slider__item {
     padding: 218px 451px 218px 451px;
+    @media #{$tablet} {
+      padding: 200px 100px 100px 100px;
+    }
+    @media #{$phone} {
+      padding:100px 30px 100px 30px;
+    }
+
     .slider__item__content {
       display: flex;
       flex-direction: column;
@@ -35,6 +42,13 @@
   .silder__review {
     height: 448px;
     padding: 100px 242px 95px 598px;
+    padding: 218px 451px 218px 451px;
+    @media #{$tablet} {
+      padding: 150px 100px 100px 100px;
+    }
+    @media #{$phone} {
+      padding:100px 30px 100px 30px;
+    }
     .slider__review__content {
       display: flex;
       justify-content: center;
@@ -80,6 +94,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  @media #{$tablet} {
+    padding: 40px 100px 50px 100px;
+  }
+  @media #{$phone} {
+    padding:20px 30px 100px 30px;
+  }
   .discription__title {
     font-weight: 700;
     font-size: 36px;
@@ -117,9 +137,9 @@
     }
     .review__star {
       display: flex;
-      gap: 2px img {
-        width: 16px;
-        height: 16px;
+      gap: 2px;
+      i {
+        color: #f7941e;
       }
     }
     strong {
@@ -132,6 +152,12 @@
 }
 .discription__wrapper-alt {
   padding: 10px 250px 40px 250px;
+  @media #{$tablet} {
+    padding: 10px 100px 20px 100px;
+  }
+  @media #{$phone} {
+    padding:0;
+  }
   .discription__discription__button {
     margin-top: 54px;
     background: #f7941e;
@@ -146,13 +172,33 @@
 }
 .search {
   padding: 0px 80px 20px 80px;
+  @media #{$tablet} {
+    padding: 0px 40px 10px 40px
+  }
+  @media #{$phone} {
+    padding:0px;
+  }
   .search__wrapper {
     background: #e7e7e7;
     padding: 72px 50px 72px 50px;
     display: flex;
     justify-content: space-between;
     gap: 125px;
+    @media #{$tablet} {
+      padding: 40px 30px 40px 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap:20px;
+    }
+    @media #{$phone} {
+      padding:0px;
+    }
     .search__item {
+      @media #{$tablet} {
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 4px solid white;
+      }
       .search__heading {
         font-weight: 700;
         font-size: 36px;
@@ -180,6 +226,9 @@
         max-width: 522px;
         align-items: center;
         margin-top: 28px;
+        @media #{$tablet} {
+          flex-wrap: wrap;
+        }
         .search__guide__link {
           display: flex;
           flex-direction: column;
@@ -200,7 +249,6 @@
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 16px;
         grid-row-gap: 16px;
-
         select {
           max-width: 253px;
           width: 100%;
@@ -240,6 +288,14 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+    
+  @media #{$tablet} {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @media #{$phone} {
+    padding:0;
+  }
     .info__heading {
       max-width: 700px;
       width: 100%;
@@ -263,18 +319,17 @@
     }
   }
 }
-.package-alt-2{
-  background-color: #F1F1F1;
+.package-alt-2 {
+  background-color: #f1f1f1;
 }
 .package {
   padding-top: 10px;
   padding-bottom: 40px;
-  
+
   .package-heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 46px;
-
     display: flex;
     align-items: center;
     text-align: center;
@@ -287,7 +342,18 @@
     padding-left: 80px;
     padding-right: 80px;
     display: flex;
+    gap:10px;
     justify-content: space-between;
+    @media #{$phone} {
+      padding:0px;
+    
+    }
+    @media #{$tablet} {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    }
     .package_item {
       max-width: 413px;
       width: 100%;
@@ -296,6 +362,7 @@
         width: 100%;
         height: 320px;
         position: relative;
+        
       }
       .package-alt_media {
         h4 {
@@ -389,6 +456,9 @@
           .review__star {
             display: flex;
             gap: 4px;
+            i {
+              color: #f7941e;
+            }
           }
         }
       }
@@ -489,6 +559,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
+    @media #{$tablet} {
+      padding:20px 100px 20px 100px;
+    }
+    @media #{$phone} {
+      padding:0px;
+    
+    }
     .card__title {
       letter-spacing: -0.015em;
       color: #575351;
@@ -514,6 +592,10 @@
       justify-content: center;
       gap: 30px;
       width: 100%;
+      @media #{$tablet} {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+      }
       .card__item {
         max-width: 227px;
         width: 100%;
@@ -577,24 +659,19 @@
   left: 0px;
   position: relative;
   right: 0px;
-  text-decoration: none solid rgb(27, 43, 58);
-  text-emphasis-color: rgb(27, 43, 58);
-  text-size-adjust: 100%;
   top: 0px;
   max-width: 1440px;
   width: 100%;
+  @media #{$tablet} {
+    display: none;
+  }
 }
 .community__box__one {
   min-block-size: 423px;
   min-height: 423px;
-  padding-block-end: 40px;
-  padding-block-start: 40px;
   perspective-origin: 720px 211.5px;
   position: relative;
   right: 0px;
-  text-decoration: none solid rgb(27, 43, 58);
-  text-emphasis-color: rgb(27, 43, 58);
-  text-size-adjust: 100%;
   max-width: 1440px;
   width: 100%;
   background: rgb(235, 230, 0) none repeat scroll 0% 0% / auto padding-box
@@ -628,9 +705,6 @@
   max-width: 670px;
   position: absolute;
   right: 135px;
-  text-decoration: none solid rgb(255, 255, 255);
-  text-emphasis-color: rgb(255, 255, 255);
-  text-size-adjust: 100%;
   top: -65px;
   transform-origin: 335px 188.477px;
   width: 670px;
@@ -689,6 +763,7 @@
   }
 }
 .community__media {
+
   z-index: 2;
   left: 0px;
   position: relative;
@@ -793,6 +868,10 @@
     gap: 223px;
     justify-content: center;
     align-items: center;
+    @media #{$tablet} {
+      padding: 40px;
+      gap:100px;
+    }
     a {
       display: flex;
       flex-direction: column;
@@ -804,6 +883,10 @@
       line-height: 26px;
       color: #575351;
       text-transform: capitalize;
+      img{
+        max-width: 160px;
+        width:100%;
+      }
     }
   }
   .contact__wrapper-alt {

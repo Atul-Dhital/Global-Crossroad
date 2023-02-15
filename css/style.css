@@ -182,6 +182,11 @@ a:focus, a:active {
 .header__wrapper {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .header__wrapper {
+    display: none;
+  }
+}
 .header__wrapper .header__top {
   display: flex;
   justify-content: space-between;
@@ -253,6 +258,16 @@ a:focus, a:active {
 .slider__wrapper .slider__item {
   padding: 218px 451px 218px 451px;
 }
+@media screen and (max-width: 768px) {
+  .slider__wrapper .slider__item {
+    padding: 200px 100px 100px 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slider__wrapper .slider__item {
+    padding: 100px 30px 100px 30px;
+  }
+}
 .slider__wrapper .slider__item .slider__item__content {
   display: flex;
   flex-direction: column;
@@ -282,6 +297,17 @@ a:focus, a:active {
 .slider__wrapper .silder__review {
   height: 448px;
   padding: 100px 242px 95px 598px;
+  padding: 218px 451px 218px 451px;
+}
+@media screen and (max-width: 768px) {
+  .slider__wrapper .silder__review {
+    padding: 150px 100px 100px 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slider__wrapper .silder__review {
+    padding: 100px 30px 100px 30px;
+  }
 }
 .slider__wrapper .silder__review .slider__review__content {
   display: flex;
@@ -328,6 +354,16 @@ a:focus, a:active {
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .discription__wrapper {
+    padding: 40px 100px 50px 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .discription__wrapper {
+    padding: 20px 30px 100px 30px;
+  }
+}
 .discription__wrapper .discription__title {
   font-weight: 700;
   font-size: 36px;
@@ -366,9 +402,10 @@ a:focus, a:active {
 }
 .discription__wrapper .discription__review .review__star {
   display: flex;
-  gap: 2px img;
-  gap-width: 16px;
-  gap-height: 16px;
+  gap: 2px;
+}
+.discription__wrapper .discription__review .review__star i {
+  color: #f7941e;
 }
 .discription__wrapper .discription__review strong {
   color: rgba(0, 0, 0, 0.8);
@@ -379,6 +416,16 @@ a:focus, a:active {
 
 .discription__wrapper-alt {
   padding: 10px 250px 40px 250px;
+}
+@media screen and (max-width: 768px) {
+  .discription__wrapper-alt {
+    padding: 10px 100px 20px 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .discription__wrapper-alt {
+    padding: 0;
+  }
 }
 .discription__wrapper-alt .discription__discription__button {
   margin-top: 54px;
@@ -395,12 +442,42 @@ a:focus, a:active {
 .search {
   padding: 0px 80px 20px 80px;
 }
+@media screen and (max-width: 768px) {
+  .search {
+    padding: 0px 40px 10px 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .search {
+    padding: 0px;
+  }
+}
 .search .search__wrapper {
   background: #e7e7e7;
   padding: 72px 50px 72px 50px;
   display: flex;
   justify-content: space-between;
   gap: 125px;
+}
+@media screen and (max-width: 768px) {
+  .search .search__wrapper {
+    padding: 40px 30px 40px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .search .search__wrapper {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .search .search__wrapper .search__item {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 4px solid white;
+  }
 }
 .search .search__wrapper .search__item .search__heading {
   font-weight: 700;
@@ -429,6 +506,11 @@ a:focus, a:active {
   max-width: 522px;
   align-items: center;
   margin-top: 28px;
+}
+@media screen and (max-width: 768px) {
+  .search .search__wrapper .search__item .search__guide {
+    flex-wrap: wrap;
+  }
 }
 .search .search__wrapper .search__item .search__guide .search__guide__link {
   display: flex;
@@ -488,6 +570,17 @@ a:focus, a:active {
   align-items: center;
   gap: 15px;
 }
+@media screen and (max-width: 768px) {
+  .info .info__wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .info .info__wrapper {
+    padding: 0;
+  }
+}
 .info .info__wrapper .info__heading {
   max-width: 700px;
   width: 100%;
@@ -511,7 +604,7 @@ a:focus, a:active {
 }
 
 .package-alt-2 {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
 .package {
@@ -534,7 +627,20 @@ a:focus, a:active {
   padding-left: 80px;
   padding-right: 80px;
   display: flex;
+  gap: 10px;
   justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .package .package__wrapper {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .package .package__wrapper {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .package .package__wrapper .package_item {
   max-width: 413px;
@@ -639,6 +745,9 @@ a:focus, a:active {
   display: flex;
   gap: 4px;
 }
+.package .package__wrapper .package_item .package__content .package__review .review__star i {
+  color: #f7941e;
+}
 .package .package__wrapper .package_item .package-alt_content {
   display: flex;
   justify-content: center;
@@ -735,6 +844,16 @@ a:focus, a:active {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .card .card__wrapper {
+    padding: 20px 100px 20px 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card .card__wrapper {
+    padding: 0px;
+  }
+}
 .card .card__wrapper .card__title {
   letter-spacing: -0.015em;
   color: #575351;
@@ -760,6 +879,12 @@ a:focus, a:active {
   justify-content: center;
   gap: 30px;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .card .card__wrapper .card__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .card .card__wrapper .card__container .card__item {
   max-width: 227px;
@@ -822,35 +947,22 @@ a:focus, a:active {
   left: 0px;
   position: relative;
   right: 0px;
-  -webkit-text-decoration: none solid rgb(27, 43, 58);
-          text-decoration: none solid rgb(27, 43, 58);
-  -webkit-text-emphasis-color: rgb(27, 43, 58);
-          text-emphasis-color: rgb(27, 43, 58);
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-          text-size-adjust: 100%;
   top: 0px;
   max-width: 1440px;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .community {
+    display: none;
+  }
 }
 
 .community__box__one {
   min-block-size: 423px;
   min-height: 423px;
-  -webkit-padding-after: 40px;
-          padding-block-end: 40px;
-  -webkit-padding-before: 40px;
-          padding-block-start: 40px;
   perspective-origin: 720px 211.5px;
   position: relative;
   right: 0px;
-  -webkit-text-decoration: none solid rgb(27, 43, 58);
-          text-decoration: none solid rgb(27, 43, 58);
-  -webkit-text-emphasis-color: rgb(27, 43, 58);
-          text-emphasis-color: rgb(27, 43, 58);
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-          text-size-adjust: 100%;
   max-width: 1440px;
   width: 100%;
   background: rgb(235, 230, 0) none repeat scroll 0% 0%/auto padding-box border-box;
@@ -885,13 +997,6 @@ a:focus, a:active {
   max-width: 670px;
   position: absolute;
   right: 135px;
-  -webkit-text-decoration: none solid rgb(255, 255, 255);
-          text-decoration: none solid rgb(255, 255, 255);
-  -webkit-text-emphasis-color: rgb(255, 255, 255);
-          text-emphasis-color: rgb(255, 255, 255);
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-          text-size-adjust: 100%;
   top: -65px;
   transform-origin: 335px 188.477px;
   width: 670px;
@@ -1068,6 +1173,12 @@ a:focus, a:active {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .contact .contact__wrapper {
+    padding: 40px;
+    gap: 100px;
+  }
+}
 .contact .contact__wrapper a {
   display: flex;
   flex-direction: column;
@@ -1079,6 +1190,10 @@ a:focus, a:active {
   line-height: 26px;
   color: #575351;
   text-transform: capitalize;
+}
+.contact .contact__wrapper a img {
+  max-width: 160px;
+  width: 100%;
 }
 .contact .contact__wrapper-alt {
   flex-direction: column;
@@ -1119,6 +1234,11 @@ a:focus, a:active {
 
 .slider__buttom {
   display: flex;
+}
+@media screen and (max-width: 500px) {
+  .slider__buttom {
+    display: none;
+  }
 }
 .slider__buttom .slider__buttom__item {
   justify-content: center;
@@ -1162,12 +1282,34 @@ a:focus, a:active {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .information .information__wrapper {
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    display: block;
+  }
+}
 .information .information__wrapper .informaion__item-alt {
   max-width: 665px;
   width: 100%;
   display: flex;
   gap: 30px;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .information .information__wrapper .informaion__item-alt {
+    max-width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
 }
 .information .information__wrapper .informaion__item-alt .information__title {
   font-weight: 700;
@@ -1262,6 +1404,17 @@ a:focus, a:active {
   padding: 70px 80px 50px 80px;
   gap: 34px;
 }
+@media screen and (max-width: 768px) {
+  .tip .tip__wrapper {
+    padding: 20px 20px 30px 20px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  .tip .tip__wrapper {
+    padding: 20px 0;
+  }
+}
 .tip .tip__wrapper .tip__heading {
   font-weight: 700;
   font-size: 36px;
@@ -1276,6 +1429,11 @@ a:focus, a:active {
   justify-content: center;
   gap: 30px;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .tip .tip__wrapper .tip__container {
+    flex-wrap: wrap;
+  }
 }
 .tip .tip__wrapper .tip__container .tip__item {
   max-width: 305px;
@@ -1358,6 +1516,17 @@ a:focus, a:active {
   flex-direction: column;
   gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  .plan .plan__wrapper {
+    padding: 50px 100px 50px 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .plan .plan__wrapper {
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+  }
+}
 .plan .plan__wrapper .plan__heading {
   font-weight: 500;
   font-size: 40px;
@@ -1399,6 +1568,17 @@ a:focus, a:active {
   flex-direction: column;
   gap: 53px;
 }
+@media screen and (max-width: 768px) {
+  .review .review__wrapper {
+    padding: 20px 20px 30px 20px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  .review .review__wrapper {
+    padding: 20px 0;
+  }
+}
 .review .review__wrapper .review__heading {
   text-align: center;
   text-transform: capitalize;
@@ -1413,6 +1593,21 @@ a:focus, a:active {
   gap: 117px;
   max-width: 1185px;
   height: 197px;
+}
+@media screen and (max-width: 768px) {
+  .review .review__wrapper .review__container {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .review .review__wrapper .review__container {
+    padding: 20px 0;
+  }
 }
 .review .review__wrapper .review__container .review___type {
   display: flex;
@@ -1453,21 +1648,24 @@ a:focus, a:active {
 }
 .review .review__wrapper .review__container .review___type .star {
   display: flex;
-  gap: 6px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  background: #dadde2;
+  border-radius: 2px;
 }
-.review .review__wrapper .review__container .review___type .star image {
-  display: flex;
-  gap: 2px;
-}
-.review .review__wrapper .review__container .review___type .star image img {
-  width: 12px;
-  height: 12px;
+.review .review__wrapper .review__container .review___type .star i {
+  width: 8px;
+  height: 8px;
+  color: #f7941e;
+  margin-left: 3px;
 }
 .review .review__wrapper .review__container .review___type .star span {
   font-weight: 500;
   font-size: 13px;
   line-height: 17px;
   color: #000000;
+  margin-left: 5px;
 }
 .review .review__wrapper .review__container .review___type .review__discription {
   font-weight: 500;
@@ -1491,17 +1689,20 @@ a:focus, a:active {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 3px 13px 11px 13px;
   background: #dadde2;
   border-radius: 4px;
   gap: 1px;
 }
 .review .review__wrapper .review__container .review___type .review__container-alt .review__count-alt .star {
   display: flex;
-  width: 12px;
-  height: 12px;
-  gap: 2px;
-  background: #f7941e;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.review .review__wrapper .review__container .review___type .review__container-alt .review__count-alt .star i {
+  width: 8px;
+  height: 8px;
+  color: #f7941e;
 }
 .review .review__wrapper .review__container .review___type .review__container-alt .review__line {
   display: flex;
@@ -1553,6 +1754,12 @@ a:focus, a:active {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .testimonial .testimonial__wrapper {
+    padding: 10px 40px 10px 40px;
+    flex-wrap: wrap;
+  }
+}
 .testimonial .testimonial__wrapper .testimonial__item {
   display: flex;
   flex-direction: column;
@@ -1570,6 +1777,11 @@ a:focus, a:active {
   line-height: 46px;
   color: #575351;
   text-transform: capitalize;
+}
+@media screen and (max-width: 768px) {
+  .testimonial .testimonial__wrapper .testimonial__item .testimonial__title {
+    text-align: center;
+  }
 }
 .testimonial .testimonial__wrapper .testimonial__item .testimonial__subtitle {
   text-transform: capitalize;
@@ -1601,6 +1813,11 @@ a:focus, a:active {
 .testimonial .testimonial__wrapper .testimonial__item .contact {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .testimonial .testimonial__wrapper .testimonial__item .contact {
+    flex-wrap: wrap;
+  }
+}
 .testimonial .testimonial__wrapper .testimonial__item .contact .contact__type {
   max-width: 274px;
   display: flex;
@@ -1609,6 +1826,11 @@ a:focus, a:active {
   align-items: center;
   padding: 40px 80px 40px 75px;
   gap: 12px;
+}
+@media screen and (max-width: 768px) {
+  .testimonial .testimonial__wrapper .testimonial__item .contact .contact__type {
+    padding: 20px 30px 20px 30px;
+  }
 }
 .testimonial .testimonial__wrapper .testimonial__item .contact .contact__type .contact__item {
   width: 50px;
@@ -1629,6 +1851,11 @@ a:focus, a:active {
   padding: 38px 26px;
   background: #f0f8ff;
 }
+@media screen and (max-width: 768px) {
+  .testimonial .testimonial__wrapper .testimonial__item .testimonial__slider {
+    padding: 20px;
+  }
+}
 .testimonial .testimonial__wrapper .testimonial__item .testimonial__slider .testimonial__slider__head {
   color: #575351;
   font-weight: 400;
@@ -1638,6 +1865,12 @@ a:focus, a:active {
 }
 .testimonial .testimonial__wrapper .testimonial__item .testimonial__slider .testimonial__slider__container {
   margin-top: 30px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .testimonial .testimonial__wrapper .testimonial__item .testimonial__slider .testimonial__slider__container {
+    margin-top: 10px;
+  }
 }
 .testimonial .testimonial__wrapper .testimonial__item .testimonial__slider .testimonial__slider__container .testimonial__slider__heading {
   letter-spacing: -0.015em;
@@ -1686,7 +1919,8 @@ a:focus, a:active {
 .testimonal__discription-wrapper .testimonal__point {
   text-transform: capitalize;
   list-style: none;
-  min-width: 600px;
+  max-width: 600px;
+  width: 100%;
 }
 .testimonal__discription-wrapper .testimonal__point i {
   width: 6px;

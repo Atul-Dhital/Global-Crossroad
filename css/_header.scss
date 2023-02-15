@@ -1,5 +1,8 @@
 .header__wrapper {
   width: 100%;
+  @media #{$tablet} {
+    display: none;
+  }
   .header__top {
     display: flex;
     justify-content: space-between;
